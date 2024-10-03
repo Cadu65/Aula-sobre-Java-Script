@@ -17,13 +17,14 @@ botao.addEventListener("click", () => {
             mensagem.innerText = `Olá, ${nome}! Você tem apenas ${idade} anos.`;
             mensagem.style.color = "green"; //Altera a cor do texto para verde
             } else {
+                if (idade < 18) {
                 mensagem.innerText = `Olá, ${nome}! Você é maior de idade com ${idade} anos.`;
                 mensagem.style.color = "green"; //Atera a cor do texto para verde
             }
             console.log(`Nome do usuário: ${nome}`);
             console.log(`Idade do usuário: ${Idade}`);
         }
-     else {
+    } else {
         mensagem.innerText = "Nome não fornecido. Por favor, insira um nome.";
         mensagem.style.color = "orange"; //Altera a cor do texto para laranja
     }
